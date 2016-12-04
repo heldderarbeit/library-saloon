@@ -1,12 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Marck+Script);
 @import url(https://fonts.googleapis.com/css?family=Old+Standard+TT);
+
 .horizontal-align {
     margin-left: auto;
     margin-right: auto;
 }
+
 html {
     background: url('../assets/images/background/reader\'s corner.jpg') no-repeat center top fixed;
 }
+
 body {
     font-family: 'Marck Script', Times, serif;
     overflow: hidden;
@@ -17,11 +20,13 @@ body {
     -ms-user-select: none;
     user-select: none;
 }
+
 .credits-div {
     position: absolute;
     right: 15px;
     top: 15px;
 }
+
 .credits-button {
     background-color: black;
     color: white;
@@ -34,24 +39,29 @@ body {
     position: relative;
     z-index: 1;
 }
+
 .credits-button:hover {
     cursor: pointer;
 }
+
 .credits-button:active,
 .credits-button:focus {
     outline: none;
     padding: 0px;
 }
+
 .credits-text {
     position: absolute;
     left: 11px;
     top: 0.75px;
 }
+
 @-moz-document url-prefix() {
     .credits-text {
         top: 0px;
     }
 }
+
 .book-div {
     height: 90px;
     width: 140px;
@@ -62,6 +72,7 @@ body {
     -ms-animation-duration: 1.5s;
     -o-animation-duration: 1.5s;
 }
+
 .page {
     height: 65px;
     width: 55px;
@@ -70,45 +81,43 @@ body {
     text-align: center;
     font-size: 20px;
 }
+
 .page:hover {
     cursor: pointer;
 }
+
 .left-page {
     left: 11.25px;
 }
+
 .right-page {
     right: 13.0px;
 }
+
 .random-icon {
     line-height: 60px;
     /* Safari */
-    
     -webkit-transform: rotate(178deg);
     /* Firefox */
-    
     -moz-transform: rotate(178deg);
     /* IE */
-    
     -ms-transform: rotate(178deg);
     /* Opera */
-    
     -o-transform: rotate(178deg);
 }
+
 .search-icon {
     line-height: 60px;
     /* Safari */
-    
     -webkit-transform: rotate(-15deg);
     /* Firefox */
-    
     -moz-transform: rotate(-15deg);
     /* IE */
-    
     -ms-transform: rotate(-15deg);
     /* Opera */
-    
     -o-transform: rotate(-15deg);
 }
+
 .search-div {
     height: 295px;
     width: 335px;
@@ -124,6 +133,7 @@ body {
     -o-animation-duration: 1.5s;
     -o-animation-delay: 0.5s;
 }
+
 .search-intro-text {
     position: absolute;
     top: 7.5px;
@@ -131,9 +141,11 @@ body {
     text-align: center;
     font-size: 32.5px;
 }
+
 .search-intro-text:hover {
     cursor: default;
 }
+
 .search-input {
     font-family: 'Marck Script', Times, serif;
     font-size: 28px;
@@ -145,14 +157,17 @@ body {
     margin-top: 10px;
     margin-left: -25px;
 }
+
 @-moz-document url-prefix() {
     .search-input {
         margin-left: -5px;
     }
 }
+
 .search-input:focus {
     outline: none;
 }
+
 .result-div {
     visibility: hidden;
     height: 200px;
@@ -160,6 +175,7 @@ body {
     margin-top: -50px;
     font-family: 'Old Standard TT', Times, serif;
 }
+
 #result-img1 {
     -moz-transform: scale(-1, 1);
     -webkit-transform: scale(-1, 1);
@@ -168,6 +184,7 @@ body {
     transform: scale(-1, 1);
     float: left;
 }
+
 #result-img2 {
     -moz-transform: scale(-1, 1);
     -webkit-transform: scale(-1, 1);
@@ -177,6 +194,7 @@ body {
     float: right;
     margin-right: 250px;
 }
+
 ol {
     font-size: 13px;
     list-style-type: upper-roman;
@@ -184,12 +202,15 @@ ol {
     position: absolute;
     top: 10px;
 }
+
 #firstreslist {
     left: 26.25px;
 }
+
 #secondreslist {
     right: 302.5px;
 }
+
 @-moz-document url-prefix() {
     ol {
         top: 8px;
@@ -198,23 +219,28 @@ ol {
         right: 315px;
     }
 }
+
 li > a {
     font-size: 17px;
     text-decoration: none;
     color: black;
 }
+
 li > a:hover {
     text-decoration: underline;
 }
+
 .wine-glass-div {
     width: 60px;
     height: 120px;
     padding-left: 200px;
     padding-top: 90px;
 }
+
 .wine-glass:hover {
     cursor: pointer;
 }
+
 .no-pointer-events {
     pointer-events: none;
 }
