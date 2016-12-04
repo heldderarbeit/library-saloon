@@ -68,6 +68,7 @@ function askWiki(searchval) {
       // cleans results list
       $("ol").html("");
       $(".result-div").css("visibility", "visible").addClass("slideInUp");
+      
       var articlearr = [];
       var reslength = response.query.search.length;
       for (var i = 0; i < reslength; i++) {
@@ -79,6 +80,7 @@ function askWiki(searchval) {
         var preview = "... " + response.query.search[i].snippet + " ...";
         articlearr.push(new Article(title, strip(preview), "https://de.wikipedia.org/wiki/" + response.query.search[i].title));
       }
+      
       $(articlearr).each(function(index, articleobj) {	  
         if (index <= 4) {
           var listElem = $("#firstreslist");
